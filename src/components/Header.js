@@ -20,9 +20,11 @@ class Header extends Component {
               <li><a href="#">Careers</a></li>
           </ul>
       </div>
-      <div className="tertiary">
+      <div className="tertiary" 
+        //style={{backgroundColor: 'yellow'}}
+      >
           <ul>
-            <li><a href="#">LOGIN</a></li>
+            <li ><a  href="#">LOGIN</a></li>
             <li><a href="#">SEARCH </a></li>
           </ul>
 

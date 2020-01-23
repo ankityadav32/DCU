@@ -1,6 +1,6 @@
 .Header{
   display:grid;
-  grid-template-columns: 100px 50px 100px;
+  grid-template-columns: 100px 50px 220px;
   grid-column-gap: 500px;
 
 }
@@ -22,8 +22,13 @@
 .secondary li{
     display:inline;
 }
+.tertiary{
+    background-color: #068765;
+}
 .tertiary li{
     display:inline;
+    /* background-color:green; */
+    
 }
 .secondary li a{
     display:inline;
@@ -36,9 +41,11 @@
 .tertiary li a{
     display:inline;
     padding: 18px;
-    text-decoration:  none ;
+    
+    text-decoration: none ;
     color:#f5f4f4;
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
     letter-spacing: 0.56px
+    
 }
