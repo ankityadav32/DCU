@@ -1,0 +1,44 @@
+.Header{
+  display:grid;
+  grid-template-columns: 100px 50px 100px;
+  grid-column-gap: 500px;
+
+}
+.Header{
+    background-color: #f2f2f2;
+}
+.primary li{
+    display: inline;
+}
+ .primary li a{
+    display:inline;
+    padding: 18px;
+    text-decoration:  none ;
+    color: #068765;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+}
+.secondary li{
+    display:inline;
+}
+.tertiary li{
+    display:inline;
+}
+.secondary li a{
+    display:inline;
+    padding: 18px;
+    text-decoration:  none ;
+    color:#212529;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15.96px;
+}
+.tertiary li a{
+    display:inline;
+    padding: 18px;
+    text-decoration:  none ;
+    color:#f5f4f4;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.56px
+}
