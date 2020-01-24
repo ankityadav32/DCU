@@ -7,7 +7,7 @@ class Header extends Component {
     <div className="Header">
       <div className="primary">
           <ul>
-              <li><a href="#">CREDITUNION</a></li>
+              <li><a href="#">CREDIT UNION</a></li>
               <li><a href="#">INSURANCE</a></li>
               <li><a href="#">REALTY</a></li>
               <li><a href="#">INVESTMENT</a></li>
@@ -16,16 +16,16 @@ class Header extends Component {
       <div className="secondary">
           <ul>
               <li><a href="#">Community</a></li>
-              <li><a href="#">Branches&ATMs</a></li>
+              <span>|</span>
+              <li><a href="#">Branches & ATMs</a></li>
               <li><a href="#">Careers</a></li>
           </ul>
       </div>
-      <div className="tertiary" 
-        //style={{backgroundColor: 'yellow'}}
-      >
+      <div className="tertiary">
           <ul>
-            <li ><a  href="#">LOGIN</a></li>
-            <li><a href="#">SEARCH </a></li>
+            <li ><a href="#">LOGIN</a></li>
+            <span>|</span>
+            <li><a href="#">SEARCH</a></li>
           </ul>
 
       </div>

@@ -1,34 +1,43 @@
 .Header{
   display:grid;
-  grid-template-columns: 100px 50px 220px;
-  grid-column-gap: 500px;
-
+  grid-template-columns: 46% 33% 23%;
 }
 .Header{
     background-color: #f2f2f2;
+    
+   
+    
 }
 .primary li{
-    display: inline;
+    display: inline; 
 }
  .primary li a{
     display:inline;
     padding: 18px;
+   
     text-decoration:  none ;
     color: #068765;
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
     letter-spacing: 0.56px;
+
+    
 }
 .secondary li{
     display:inline;
 }
 .tertiary{
     background-color: #068765;
+    
 }
 .tertiary li{
     display:inline;
-    /* background-color:green; */
-    
+}
+.tertiary span{
+    color: #f2f2f2;
+}
+ .secondary span{
+    color:#20b389;
 }
 .secondary li a{
     display:inline;
@@ -41,11 +50,18 @@
 .tertiary li a{
     display:inline;
     padding: 18px;
-    
     text-decoration: none ;
     color:#f5f4f4;
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
     letter-spacing: 0.56px
     
+}
+.container{
+    height: 45.04px;
+}
+.priom
+
+.tertiary {
+  
 }
