@@ -1,11 +1,9 @@
-.Header{
+/* .TopNavbar{
   display:grid;
   grid-template-columns: 46% 33% 23%;
 }
 .Header{
     background-color: #f2f2f2;
-    
-   
     
 }
 .primary li{
@@ -64,4 +62,65 @@
 
 .tertiary {
   
+} */
+.TopNavbar{
+    display:flex;
+    background-color: #f2f2f2;
+    
+}
+li{
+    display: inline-block;
+
+}
+ul{
+    margin:12px;
+    padding-left:0px;
+}
+.primary {
+    width: 44%;
+    height: 6%;
+    box-sizing: border-box;
+}
+.secondary{
+    width: 33%;
+    height: 6%;
+    box-sizing: border-box;
+}
+.tertiary{
+    width: 19%;
+    height: 6%;
+    background-color: #068765;
+    box-sizing: border-box;
+}
+.primary li a{
+    color: #068765;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    padding-left: 45px;
+    text-decoration: none;
+}
+.secondary li a{
+    color:#212529;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15.96px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 15.96px;
+    letter-spacing: 0.56px;
+}
+.secondary span{
+    color:#20b389;
+    padding-right: 15px;
+}
+.tertiary li a{
+    padding: 15px;
+    text-decoration: none ;
+    color:#f5f4f4;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+}
+.tertiary span{
+    color: #f2f2f2;
 }
