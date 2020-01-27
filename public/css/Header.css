@@ -67,13 +67,14 @@
     display:flex;
     background-color: #f2f2f2;
     
+    
 }
 li{
     display: inline-block;
 
 }
 ul{
-    margin:12px;
+    margin:13px;
     padding-left:0px;
 }
 .primary {
@@ -82,15 +83,21 @@ ul{
     box-sizing: border-box;
 }
 .secondary{
-    width: 33%;
+    width: 38%;
     height: 6%;
     box-sizing: border-box;
 }
 .tertiary{
+    
     width: 19%;
-    height: 6%;
     background-color: #068765;
     box-sizing: border-box;
+}
+.primary ul{
+    padding-left: 35px;
+}
+.secondary ul{
+    padding-left: 85px;
 }
 .primary li a{
     color: #068765;
@@ -114,6 +121,7 @@ ul{
     padding-right: 15px;
 }
 .tertiary li a{
+    
     padding: 15px;
     text-decoration: none ;
     color:#f5f4f4;

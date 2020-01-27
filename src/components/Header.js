@@ -31,6 +31,18 @@ class Header extends Component {
                         </ul>
                         </div>
                     </div>
+                    <div className="BottomNavbar">
+                        <img src="/etc.clientlibs/dcu/clientlibs/clientlib-site/resources/images/svg/DCUGreen.svg"/>
+                        <ul>
+                            <li>Bank</li>
+                            <li>Borrow</li>
+                            <li>Plan</li>
+                            <li>Learn</li>
+                            <li>Access</li>
+                            <li>Services</li>
+                            <li>Join</li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
