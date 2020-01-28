@@ -26,21 +26,21 @@ class Header extends Component {
                         <div className="tertiary">
                         <ul>
                             <li ><a href="#">LOGIN</a></li>
-                            <span>|</span>
+                            <span>|</span><span><i class="fas fa-search"></i></span>
                             <li><a href="#">SEARCH</a></li>
                         </ul>
                         </div>
                     </div>
                     <div className="BottomNavbar">
-                        <img src="/etc.clientlibs/dcu/clientlibs/clientlib-site/resources/images/svg/DCUGreen.svg"/>
+                        <img src="DCUGreen.svg" alt="DCU logo"/>
                         <ul>
-                            <li>Bank</li>
-                            <li>Borrow</li>
-                            <li>Plan</li>
-                            <li>Learn</li>
-                            <li>Access</li>
-                            <li>Services</li>
-                            <li>Join</li>
+                            <li><a href="#">Bank</a></li>
+                            <li><a href="#">Borrow</a></li>
+                            <li><a href="#">Plan</a></li>
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Access</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Join</a></li>
                         </ul>
                     </div>
                 </div>

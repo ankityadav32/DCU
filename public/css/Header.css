@@ -69,12 +69,12 @@
     
     
 }
-li{
+.TopNavbar li{
     display: inline-block;
 
 }
-ul{
-    margin:13px;
+.TopNavbar ul{
+    margin:11px;
     padding-left:0px;
 }
 .primary {
@@ -94,7 +94,7 @@ ul{
     box-sizing: border-box;
 }
 .primary ul{
-    padding-left: 35px;
+    padding-left: 0px;
 }
 .secondary ul{
     padding-left: 85px;
@@ -131,4 +131,18 @@ ul{
 }
 .tertiary span{
     color: #f2f2f2;
+}
+.BottomNavbar{
+    margin :12px;
+}
+.BottomNavbar img{
+    padding-left: 40px;
+    float: left;
+}
+.BottomNavbar ul{
+    float: left; margin-top: 5px;
+}
+.BottomNavbar li{
+    display: inline;
+    padding-right: 40px;
 }
