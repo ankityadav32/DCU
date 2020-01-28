@@ -140,9 +140,19 @@
     float: left;
 }
 .BottomNavbar ul{
-    float: left; margin-top: 5px;
+    float: left; 
+    margin-top: 9px;
+    margin-left: 21px;
+    
 }
 .BottomNavbar li{
     display: inline;
-    padding-right: 40px;
+    padding-right: 50px;
+}
+.BottomNavbar li a{
+    color: #212529;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20.02px;
+    letter-spacing: 0.56px;
+    text-decoration: none;
 }
