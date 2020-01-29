@@ -197,3 +197,34 @@ and (max-device-width : 1024px)  {
     font-size: 23px;
 }
 }
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+    
+    .TopNavbar{
+        display: none;
+    }
+   .BottomNavbar ul{
+       display: none;
+   }
+   .BottomNavbar img{
+    width: 65.94px;
+    height:24.31px;
+    float: left;
+    margin:0;
+    padding-left: 16px; 
+}
+.BottomNavbar #menubars{
+    float: left;
+    display: inline;
+    font-size: 23px;
+}
+.BottomNavbar #logo{
+    display: inline;
+    float:right;
+    padding-right: 20px;
+    font-size: 23px;
+}
+    
+}
