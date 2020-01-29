@@ -79,12 +79,10 @@
 }
 .primary {
     width: 44%;
-    height: 6%;
     box-sizing: border-box;
 }
 .secondary{
     width: 38%;
-    height: 6%;
     box-sizing: border-box;
 }
 .tertiary{
@@ -107,14 +105,20 @@
     padding-left: 45px;
     text-decoration: none;
 }
+.primary #Special{
+    font-weight: 600;
+}
 .secondary li a{
-    color:#212529;
+    color:#212529ce;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 15.96px;
+    font-size: 14.96px;
     padding-right: 15px;
     text-decoration: none;
     font-size: 15.96px;
-    letter-spacing: 0.56px;
+    letter-spacing: 0.36px;
+}
+ .secondary #Special{
+    color: #050505be;font-weight: 600;
 }
 .secondary span{
     color:#20b389;
@@ -122,15 +126,17 @@
 }
 .tertiary li a{
     
-    padding: 15px;
+    padding: 6px;
     text-decoration: none ;
     color:#f5f4f4;
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
     letter-spacing: 0.56px;
+    font-weight: 550;
 }
 .tertiary span{
     color: #f2f2f2;
+    padding-left: 10px;
 }
 .BottomNavbar{
     margin :12px;
@@ -138,6 +144,12 @@
 .BottomNavbar img{
     padding-left: 40px;
     float: left;
+}
+.BottomNavbar #logo{
+    display: none;
+}
+.BottomNavbar #menubars{
+    display: none;
 }
 .BottomNavbar ul{
     float: left; 
@@ -150,9 +162,38 @@
     padding-right: 50px;
 }
 .BottomNavbar li a{
-    color: #212529;
+    color: #212529e3;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 20.02px;
+    font-size: 20px;
     letter-spacing: 0.56px;
     text-decoration: none;
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    
+    .TopNavbar{
+        display: none;
+    }
+   .BottomNavbar ul{
+       display: none;
+   }
+   .BottomNavbar img{
+    width: 65.94px;
+    height:24.31px;
+    float: left;
+    margin:0;
+    padding-left: 16px; 
+}
+.BottomNavbar #menubars{
+    float: left;
+    display: inline;
+    font-size: 23px;
+}
+.BottomNavbar #logo{
+    display: inline;
+    float:right;
+    padding-right: 20px;
+    font-size: 23px;
+}
 }
