@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-
 import Header from './components/Header';
+import DCUCarousel from './components/DCUCarousel';
 
 function App() {
   return (
     <div className="App">
       <Header/>
+      <DCUCarousel/>
     </div>
   );
 }
