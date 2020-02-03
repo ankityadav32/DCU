@@ -46,7 +46,7 @@ class Header extends Component {
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Join</a></li>
                             
-                        </ul><br/><br/><br/>
+                        </ul><br/><br/>
                     </div>
                 </div>
             </nav>

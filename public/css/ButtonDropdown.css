@@ -1,0 +1,12 @@
+.button-dropdown{
+    background-color:rgb(9, 124, 99);
+    height: 120px;
+    font-size: 35px;
+    color: white;
+    margin: 0%;    
+    padding: 0%;
+}
+
+#content{
+    padding: 35px;
+}

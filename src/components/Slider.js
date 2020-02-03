@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { transform } from '@babel/core';
 
 function Slider(){
     let sliderArr = [<img src='pic2.jpg'/>,

@@ -143,6 +143,7 @@
 }
 .BottomNavbar img{
     padding-left: 40px;
+    padding-bottom: 13px;
     float: left;
 }
 .BottomNavbar #logo{
