@@ -1,12 +1,28 @@
-.button-dropdown{
-    background-color:rgb(9, 124, 99);
-    height: 120px;
+.dropdown-span{
+    background-color:rgba(7, 99, 79, 0.938);
+    height: 95px;
+    margin: 0%;    
+    padding:0;
+    padding-left:50px;
+    padding-top: 38px;
+   
+    font-size: 37px;
+    color: white;
+
+}
+.dropdown{
     font-size: 35px;
     color: white;
-    margin: 0%;    
-    padding: 0%;
+    position: relative;
+    display: inline-block;
+    padding-left:50px; 
+
+    cursor:pointer;
+    text-decoration: none;
 }
 
-#content{
-    padding: 35px;
+.dropdown-list{
+    width: 170%;
+    font-size: 30px;
+    height: 40px;
 }
