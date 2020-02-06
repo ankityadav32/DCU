@@ -15,7 +15,7 @@ class ButtonDropdown extends Component {
                 <div className="dropdown">
                     <span  className="dropspan">
                     <select className="dropdown-list">
-                        <option value="a student loan">a student loan</option>
+                        <option className="main" value="a student loan">a student loan</option>
                         <option value="a certificate account">a certificate account</option>
                         <option value="a checking account">a checking account</option>
                         <option value="a mortgage">a mortgage</option>
@@ -24,10 +24,7 @@ class ButtonDropdown extends Component {
                         <option value="a credit card">a credit card</option>
                         <option value="a vehicle loan">a vehicle loan</option>
                     </select>
-                    
                     </span>
-                    
-                
                 </div>
             </div>
         );
