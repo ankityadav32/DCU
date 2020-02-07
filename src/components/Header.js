@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+import Popup from './Popup';
 class Header extends Component {
+    
+    myfunc = ()=>{
+       this.setState({keymine:<Popup/>}); 
+    }
   render() {
     return (
         <header>
@@ -9,7 +14,7 @@ class Header extends Component {
                         <div className="primary">
                         <ul>
                             <li><a id="Special" href="#">CREDIT UNION</a></li>
-                            <li><a href="#">INSURANCE</a></li>
+                            <li><a href="#" onClick={this.myfunc}>INSURANCE</a></li>
                             <li><a href="#">REALTY</a></li>
                             <li><a href="#">INVESTMENT</a></li>
                         </ul>
