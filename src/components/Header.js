@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Popup from './Popup';
 class Header extends Component {
-    
-    myfunc = ()=>{
-       this.setState({keymine:<Popup/>}); 
+    constructor(props){
+        super(props);
+        this.state={renderer:false}
+    }
+    myfunc=()=>{
+        this.setState({renderer:true});
     }
   render() {
     return (
@@ -54,7 +57,7 @@ class Header extends Component {
                         </ul><br/><br/>
                     </div>
                 </div>
-            </nav>
+            </nav>{this.state.renderer && <Popup/>}
         </header>
     );
   }
