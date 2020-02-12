@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-
 class Popup extends Component {
     constructor(props){
         super(props);
+        this.state={displayValue:"block"}
 
     }
-    render() {
+    componentDidUpdate(){
+        document.getElementsByClassName("modal")[0].style.display="block";
+    }
+    closeModal=()=>{
+       document.getElementsByClassName("modal")[0].style.display="none";
+    }
+    
+    render() {console.log("i m rendering")
         return (
-         <div className="modal">
+         <div id="dispmod" className="modal">
             <div className="modal-content">
                 <div className="Modal-Header">
-                <span>CLOSE X</span>
+                <span onClick={this.closeModal}>CLOSE X</span>
                 </div>
                 <div className="modal-body">
                 <p id="heading">You are about to leave the DCU website</p>
@@ -23,7 +30,9 @@ class Popup extends Component {
                     only link you to companies and organizations
                  that we feel offer useful information, DCU does not directly
                   support nor guarantee claims made by these sites.
-                </p>
+                </p><br/>
+                <button id="continue-btn">CONTINUE</button>
+                <button id="cancel-btn" onClick={this.closeModal} >CANCEL</button>
                 </div>
             </div>
         </div>

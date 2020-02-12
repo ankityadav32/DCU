@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import Popup from './Popup';
+import Community from './Community';
 class Header extends Component {
     constructor(props){
         super(props);
-        this.state={renderer:false}
+        this.state={renderer:false,
+                    newrenderer:false}
     }
     myfunc=()=>{
         this.setState({renderer:true});
+    }
+    setRenderer=()=>{
+        this.setState({newrenderer:true});
     }
   render() {
     return (
@@ -18,13 +23,13 @@ class Header extends Component {
                         <ul>
                             <li><a id="Special" href="#">CREDIT UNION</a></li>
                             <li><a href="#" onClick={this.myfunc}>INSURANCE</a></li>
-                            <li><a href="#">REALTY</a></li>
-                            <li><a href="#">INVESTMENT</a></li>
+                            <li><a href="#" onClick={this.myfunc}>REALTY</a></li>
+                            <li><a href="#" onClick={this.myfunc}>INVESTMENT</a></li>
                         </ul>
                         </div>
                         <div className="secondary">
                         <ul>
-                            <li><a  id="Special" href="#">Community</a></li>
+                            <li><a  id="Special" onClick={this.setRenderer} href="#">Community</a></li>
                             <span>|</span>
                             <li><a href="#">Branches & ATMs</a></li>
                             <li><a href="#">Careers</a></li>
@@ -58,6 +63,7 @@ class Header extends Component {
                     </div>
                 </div>
             </nav>{this.state.renderer && <Popup/>}
+            {this.state.newrenderer && <Community/>}
         </header>
     );
   }

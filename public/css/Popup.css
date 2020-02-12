@@ -4,13 +4,14 @@
   background-color:rgba(0,0,0,0.4); 
   height: 100%;
   width: 100%;
-  top: 0;
   padding-top: 7%;
+  top: 0;
 }
 .modal-content{
+  
   position: relative;
   background-color: white;
-  height: 60%;
+  height: 68%;
   width: 37%;
   margin: auto;
   padding: 0;
@@ -19,6 +20,7 @@
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
+
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
   to {top:0; opacity:1}
@@ -43,4 +45,19 @@
 .modal-body #heading{
   font-size: 25px;
   font-weight: 500;
+}
+
+#continue-btn{
+  height:45px;
+  width:150px;
+  background-color: rgb(15, 150, 132);
+  color: white;
+  border: 2px solid rgb(15, 150, 132);
+}
+#cancel-btn{
+  height:45px;
+  width:150px;
+  margin-left: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.664);
+  
 }

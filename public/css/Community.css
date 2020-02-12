@@ -1,0 +1,35 @@
+.community{
+    background-color:white; 
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top:45px;
+    
+}
+.community span{
+    float: right;
+    padding-top: 30px;
+    padding-right: 60px;
+}
+.community-content{
+    float: left;
+    display: flex;
+    padding-top: 4%;
+    padding-left: 10%;
+    font-family: "Nunito Sans", sans-serif;
+}
+.community-content ul{
+    margin-top:0px; 
+    list-style-type:none;
+    font-size: 14px;
+    font-weight: 700;
+}
+.community-content ul li{
+    padding-top: 11px;
+    font-size: 15.96px;
+    font-weight: 500;
+}
+.community-content img{
+    padding-left:25px;
+}
