@@ -8,10 +8,10 @@ class Header extends Component {
                     newrenderer:false}
     }
     myfunc=()=>{
-        this.setState({renderer:true});
+        this.setState({renderer:true,newrenderer:false});
     }
     setRenderer=()=>{
-        this.setState({newrenderer:true});
+        this.setState({newrenderer:true,renderer:false});
     }
   render() {
     return (

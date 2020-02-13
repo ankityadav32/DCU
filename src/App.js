@@ -5,7 +5,7 @@ import ButtonDropdown from './components/ButtonDropdown';
 import Popup from './components/Popup';
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{height: '2000px'}}>
       <Header/>
       <Slider/>
       <ButtonDropdown/>

@@ -1,3 +1,4 @@
+
 .community{
     background-color:white; 
     position:fixed;
@@ -5,12 +6,19 @@
     width: 100%;
     z-index: 1;
     top:45px;
+    animation-name: animateCommunity;
+    animation-duration: 10s;
     
+}
+@keyframes animateCommunity{
+    from{top:45px}
+    to{top:1000px}   
 }
 .community span{
     float: right;
     padding-top: 30px;
     padding-right: 60px;
+    cursor: pointer;
 }
 .community-content{
     float: left;
@@ -24,12 +32,34 @@
     list-style-type:none;
     font-size: 14px;
     font-weight: 700;
+    color: rgba(0, 0, 0, 0.637);
+    letter-spacing: 0.3px;
 }
 .community-content ul li{
     padding-top: 11px;
-    font-size: 15.96px;
+    font-size: 15px;
     font-weight: 500;
+    color: rgba(0, 0, 0, 0.658);
+    letter-spacing: 0.3px;
 }
-.community-content img{
+.community-content_img_container{
     padding-left:25px;
+
+}
+.community-content_img_container img{
+    width: 90%;
+
+}
+.community-content #border-one{
+    border-top: 2px solid rgb(58, 151, 94);
+    padding-top: 18px;
+    margin-top: 18px;
+    
+}
+.community p{
+    float: left; 
+    font-size: 32.06px;
+    padding-left:12.5%;
+    color:rgb(25, 102, 76);
+    margin-top: 15px;
 }

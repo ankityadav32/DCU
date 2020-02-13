@@ -12,7 +12,7 @@ class Popup extends Component {
        document.getElementsByClassName("modal")[0].style.display="none";
     }
     
-    render() {console.log("i m rendering")
+    render() {
         return (
          <div id="dispmod" className="modal">
             <div className="modal-content">
