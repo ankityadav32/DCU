@@ -6,13 +6,18 @@
     width: 100%;
     z-index: 1;
     top:45px;
-    animation-name: animateCommunity;
-    animation-duration: 10s;
+     animation-name: animateCommunity;
+    animation-duration: 1.5s;  
+    
     
 }
 @keyframes animateCommunity{
-    from{top:45px}
-    to{top:1000px}   
+    from{height:45px}
+    to{height:1000px}   
+}
+@keyframes animateCommunity-content{
+    from{height:0px}
+    to{height:267px}   
 }
 .community span{
     float: right;
@@ -26,6 +31,10 @@
     padding-top: 4%;
     padding-left: 10%;
     font-family: "Nunito Sans", sans-serif;
+    height:267px;
+    animation-name: animateCommunity-content;
+    animation-duration: 1.5s;  
+    
 }
 .community-content ul{
     margin-top:0px; 
@@ -34,6 +43,7 @@
     font-weight: 700;
     color: rgba(0, 0, 0, 0.637);
     letter-spacing: 0.3px;
+    
 }
 .community-content ul li{
     padding-top: 11px;

@@ -5,16 +5,16 @@ class Community extends Component {
         document.getElementsByClassName("community")[0].style.display="none";
     }
     componentDidUpdate(){
-        console.log("calllllllllllllllde")
         document.getElementsByClassName("community")[0].style.display="block";
         //document.getElementsByName("body").style.overflow="hidden";
+        
     }
     render() {
         return (
             <div className="community">
                 <span onClick={this.close}>CLOSE  X</span>
                 <div className="community-content">
-                <ul>
+                <ul className="community-content-ul">
                     COMMUNITY
                     <li id="border-one">Axuda</li>
                     <li>Community Report</li>
