@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 
 class Community extends Component {
+    constructor(props){
+        super(props);
+    }
     close=()=>{
-        document.getElementsByClassName("community")[0].style.display="none";
+        this.props.close();
+        document.body.style.overflow="";
     }
     componentDidUpdate(){
-        document.getElementsByClassName("community")[0].style.display="block";
-        //document.getElementsByName("body").style.overflow="hidden";
-        
+        document.body.style.overflow="hidden";
     }
+    componentDidMount(){
+        document.body.style.overflow="hidden";
+    }
+    
+    
     render() {
         return (
-            <div className="community">
+            <div className="community" >
                 <span onClick={this.close}>CLOSE  X</span>
                 <div className="community-content">
                 <ul className="community-content-ul">

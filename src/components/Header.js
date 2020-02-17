@@ -13,6 +13,12 @@ class Header extends Component {
     setRenderer=()=>{
         this.setState({newrenderer:true,renderer:false});
     }
+    closeRender=()=>{
+        this.setState({renderer:false});
+    }
+    closeNewRender=()=>{
+        this.setState({newrenderer:false})
+    }
   render() {
     return (
         <header>
@@ -62,8 +68,8 @@ class Header extends Component {
                         </ul><br/><br/>
                     </div>
                 </div>
-            </nav>{this.state.renderer && <Popup/>}
-            {this.state.newrenderer && <Community/>}
+            </nav>{this.state.renderer && <Popup close={this.closeRender}/>}
+            {this.state.newrenderer && <Community close={this.closeNewRender}/>}
         </header>
     );
   }

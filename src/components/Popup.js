@@ -2,24 +2,27 @@ import React, { Component } from 'react';
 class Popup extends Component {
     constructor(props){
         super(props);
-        this.state={displayValue:"block"}
-
-    }
-    componentDidUpdate(){
-        document.getElementsByClassName("modal")[0].style.display="block";
-    }
-    closeModal=()=>{
-       document.getElementsByClassName("modal")[0].style.display="none";
     }
     
+    closeModal=()=>{
+    this.props.close();
+    document.body.style.overflow="";
+    }
+    componentDidUpdate(){
+        document.body.style.overflow="hidden";
+    }
+    componentDidMount(){
+        document.body.style.overflow="hidden";
+    }
+
     render() {
         return (
-         <div id="dispmod" className="modal">
-            <div className="modal-content">
-                <div className="Modal-Header">
+         <div  className="modal" >
+            <div className="modal-content" >
+                <div className="Modal-Header" >
                 <span onClick={this.closeModal}>CLOSE X</span>
                 </div>
-                <div className="modal-body">
+                <div className="modal-body" >
                 <p id="heading">You are about to leave the DCU website</p>
                 <p id="content">
                 You are about to enter a website hosted by an organization separate from DCU.

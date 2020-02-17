@@ -1,24 +1,20 @@
-
 .community{
-    background-color:white; 
-    position:fixed;
+     background-color:white;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: 1;
     top:45px;
-     animation-name: animateCommunity;
+    overflow:hidden;
+    animation-name: animateCommunity;
     animation-duration: 1.5s;  
-    
     
 }
 @keyframes animateCommunity{
     from{height:45px}
     to{height:1000px}   
 }
-@keyframes animateCommunity-content{
-    from{height:0px}
-    to{height:267px}   
-}
+
 .community span{
     float: right;
     padding-top: 30px;
@@ -32,8 +28,7 @@
     padding-left: 10%;
     font-family: "Nunito Sans", sans-serif;
     height:267px;
-    animation-name: animateCommunity-content;
-    animation-duration: 1.5s;  
+    
     
 }
 .community-content ul{
