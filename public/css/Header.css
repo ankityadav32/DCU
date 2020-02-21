@@ -104,10 +104,10 @@
     letter-spacing: 0.56px;
     text-decoration: none;
 }
-@media only screen 
+/* @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-    
+and (max-device-width : 1024px)  {  */
+    @media only screen and (max-width: 992px){
     .TopNavbar{
         display: none;
     }
