@@ -1,4 +1,4 @@
-.outer_container{
+/* .outer_container{
 
 }
 .inner_container{
@@ -43,21 +43,11 @@
 .inner_container #primary-nav li{
     margin-left:35px; 
 }
-.bsdk{
-}
+
 .navbar2 ul #tertiary-nav{
    
  }
-.navbar2 #triangle{
-   position: absolute;
-top: 0%;
-z-index: -1;
 
-border-bottom: 94px solid  #068765;
-border-left: 55px solid transparent;
-margin-top:-50px;
-  
-}
 .inner_container #primary-nav li a{
     color: #068765;
     text-decoration: none;
@@ -80,4 +70,114 @@ margin-top:-50px;
     font-weight: 550;
    
     
+} */
+
+
+.outer_container{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.inner_container{
+    width: 100%;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:16px;
+    padding-left: 16px;
+    background-color: #f2f2f2;
+      
+}
+.primary_nav{
+    float: left;
+    display: block;
+}
+.secondary_nav{
+    display: inline-block;
+    margin-top: .86rem;
+    margin-left: -7.14rem;
+
+}
+.tertiary_nav{
+    display: inline-block;
+    background-color:#068765;
+    margin-left: 5.86rem;
+    position: relative;
+    min-width: 12rem;
+}
+.tertiary_nav:before{
+    content:"";
+    border-left: 45px solid transparent;
+    border-bottom: 45px solid #068765 ;
+    height: 43px;
+    position: absolute;
+    left:-45px;
+    top: -50px;
+}
+.primary_nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.secondary_nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tertiary_nav ul{
+    list-style: none;
+    margin: 0 0 0 .43rem;
+    padding: 0;
+}
+
+.primary_nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: .86rem 1.29rem .43rem;
+}
+.primary_nav ul li:first-child{
+    padding-left: 0;
+}
+.secondary_nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 .86rem;
+}
+.tertiary_nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 0 1.51rem;
+}
+
+.primary_nav ul li a{
+    color: #068765;
+    text-decoration: none;
+    letter-spacing: .04rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+.primary_nav ul li:first-child a{
+    font-weight: 500;
+}
+.secondary_nav ul li a{
+    color: #068765;
+    text-decoration: none;
+    font-size: 1.14rem;
+    line-height: 1.43rem;
+}
+.secondary_nav ul li:first-child a{
+    font-weight: 500;
+}
+.tertiary_nav ul li a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    margin: .53rem 0;
+    display: block;
+    letter-spacing: .04rem;
+    font-weight: bold;
+    position: relative;
+}
+.tertiary_nav ul li a:before{
+    content:"\f039";
 }
