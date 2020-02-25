@@ -7,15 +7,15 @@ class Tester extends Component {
                 <div className="inner_container">
                     <nav className="primary_nav">
                         <ul>
-                            <li><a id="Special" href="#">CREDIT UNION</a></li>
-                            <li><a href="#" >INSURANCE</a></li>
-                            <li><a href="#" >REALTY</a></li>
-                            <li><a href="#" >INVESTMENT</a></li>
+                            <li><a href="#">CREDIT UNION</a></li>
+                            <li><a href="#" onClick={this.myfunc}>INSURANCE</a></li>
+                            <li><a href="#" onClick={this.myfunc}>REALTY</a></li>
+                            <li><a href="#" onClick={this.myfunc}>INVESTMENT</a></li>
                         </ul>
                     </nav>
                     <nav className="secondary_nav" >
                         <ul>
-                            <li><a id="Special" href="#">Community</a></li>
+                            <li><a onClick={this.setRenderer} href="#">Community</a></li>
                             <span>|</span>
                             <li><a href="#">Branches & ATMs</a></li>
                             <li><a href="#">Careers</a></li>

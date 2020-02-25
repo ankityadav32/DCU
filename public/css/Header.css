@@ -1,85 +1,145 @@
 
-.TopNavbar{
-    display:flex;
-    background-color: #f2f2f2;
-    
+.outer_container{
+    width: 100%;
+    float: left;
+    text-align: right;
 }
-.TopNavbar li{
+.inner_container{
+    width: 100%;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:16px;
+    padding-left: 16px;
+    background-color: #f2f2f2;
+}
+.primary_nav{
+    float: left;
+    display: block;
+}
+.secondary_nav{
     display: inline-block;
+    margin-left: -9.14rem;
 
 }
-.TopNavbar ul{
-    margin:11px;
-    padding-left:0px;
+.tertiary_nav{
+    display: inline-block;
+    background-color:#068765;
+    margin-left: 5.86rem;
+    position: relative;
+        
 }
-.primary {
-    width: 44%;
-    box-sizing: border-box;
+.tertiary_nav:before{
+    content:"";
+    border-left: 45px solid transparent;
+    border-bottom: 45px solid #068765 ;
+    height: 30px;
+    position: absolute;
+    left:-45px;
+    top: -31px;
 }
-.secondary{
-    width: 38%;
-    box-sizing: border-box;
+.primary_nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.tertiary{
+.secondary_nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tertiary_nav ul{
+    list-style: none;
+    margin: 0 0 0 .43rem;
+    padding: 0;
     
-    width: 19%;
-    background-color: #068765;
-    box-sizing: border-box;
 }
-.primary ul{
-    padding-left: 0px;
+
+.primary_nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: .7rem 1.29rem .43rem;
 }
-.secondary ul{
-    padding-left: 85px;
+
+.secondary_nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 .86rem;
 }
-.primary li a{
+.tertiary_nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 0 1.51rem;
+}
+
+.primary_nav ul li a{
     color: #068765;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.56px;
-    padding-left: 45px;
     text-decoration: none;
+    letter-spacing: .04rem;
+    font-size: .9rem;
+    display: inline-block;
 }
-.primary #Special{
-    font-weight: 600;
+.primary_nav ul li:first-child a{
+    font-weight: 500;
 }
-.secondary li a{
-    color:#212529ce;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 14.96px;
-    padding-right: 15px;
+.secondary_nav ul li a{
+    color: black;
     text-decoration: none;
-    font-size: 15.96px;
-    letter-spacing: 0.36px;
+    font-size: 1.rem;
 }
- .secondary #Special{
-    color: #050505be;font-weight: 600;
+.secondary_nav ul li:first-child a{
+    font-weight: 500;
+    color: black;
+
 }
-.secondary span{
-    color:#20b389;
-    padding-right: 15px;
+.tertiary_nav ul li a{
+    font-size: .9rem;
+    color: #fff;
+    text-decoration: none;
+    margin: .74rem 0;
+    display: block;
+    letter-spacing: .04rem;
+    font-weight: bold;
+    position: relative;
 }
-.tertiary li a{
-    
-    padding: 6px;
-    text-decoration: none ;
-    color:#f5f4f4;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.56px;
-    font-weight: 550;
+.tertiary_nav ul li a:before{
+    font-family:  "Font Awesome\ 5 Free"; 
+    content:"\f007";
+   
 }
-.tertiary span{
-    color: #f2f2f2;
-    padding-left: 10px;
+.tertiary_nav ul li:first-child{
+    padding-left: 0;
 }
+.tertiary_nav ul li:first-child::after{
+    content: "";
+    width: .11rem;
+    height: 1.14rem;
+    background-color: #fff;
+    position: absolute;
+    right: .57rem;
+    top: 30%;   
+}
+.tertiary_nav ul li:last-child{
+    padding-left: 0;
+    padding-right: 4rem;
+}
+.tertiary_nav ul li:last-child a:before{
+    font-family: "Font Awesome\ 5 Free";
+    content: "\f002 "
+}
+
 .BottomNavbar{
-    margin :12px;
-}
-.BottomNavbar img{
-    padding-left: 40px;
-    padding-bottom: 13px;
     float: left;
+    width: 100%;
+    padding: .63rem 0 ;
+    min-height: auto;
+}
+.BottomNavbar nav{
+    float: left;
+    width: 100%;
+}
+.BottomNavbar nav{
+    margin-left:2.3rem; 
 }
 .BottomNavbar #logo{
     display: none;
@@ -87,73 +147,62 @@
 .BottomNavbar #menubars{
     display: none;
 }
-.BottomNavbar ul{
-    float: left; 
-    margin-top: 9px;
-    margin-left: 21px;
-    
+.BottomNavbar nav img{
+    display: inline-block;
 }
-.BottomNavbar li{
-    display: inline;
-    padding-right: 50px;
+.BottomNavbar nav ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0%;
+    margin: 0 0 0 1.71rem;
+    position: relative;
+    vertical-align: top;
 }
-.BottomNavbar li a{
-    color: #212529e3;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.56px;
+.BottomNavbar nav ul li{
+    display: inline-block;
+    padding: 0 1.57rem;
+}
+.BottomNavbar nav ul li a{
+    color: #3a3a3a;
     text-decoration: none;
+    font-size: 1.26rem;
+    display: block;
+    line-height: 3.21rem;
+    text-align: center;
 }
-/* @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {  */
-    @media only screen and (max-width: 992px){
-    .TopNavbar{
+
+@media only screen and (max-width: 1280px) {
+    .primary_nav ul li:first-child{
+        padding-left:0; 
+    }
+    .primary_nav ul li{
+        padding: .66rem .57rem .43rem;
+    }
+    .tertiary_nav ul li:last-child{
+        padding-left: 0;
+        padding-right:1.3rem;
+    }
+    .BottomNavbar nav{
+        margin-left:1.1rem; 
+    }
+}
+@media only screen and (max-width: 1017px){
+    .outer_container{
         display: none;
     }
-   .BottomNavbar ul{
+   .BottomNavbar nav ul{
        display: none;
    }
-   .BottomNavbar img{
+   .BottomNavbar nav img{
     width: 65.94px;
     height:24.31px;
     float: left;
     margin:0;
     padding-left: 16px; 
 }
-.BottomNavbar #menubars{
-    float: left;
+.BottomNavbar  #menubars{
     display: inline;
-    font-size: 23px;
-}
-.BottomNavbar #logo{
-    display: inline;
-    float:right;
-    padding-right: 20px;
-    font-size: 23px;
-}
-}
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) { 
-    
-    .TopNavbar{
-        display: none;
-    }
-   .BottomNavbar ul{
-       display: none;
-   }
-   .BottomNavbar img{
-    width: 65.94px;
-    height:24.31px;
     float: left;
-    margin:0;
-    padding-left: 16px; 
-}
-.BottomNavbar #menubars{
-    float: left;
-    display: inline;
     font-size: 23px;
 }
 .BottomNavbar #logo{
