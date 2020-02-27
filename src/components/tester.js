@@ -1,45 +1,88 @@
 import React, { Component } from 'react';
 
-class Tester extends Component {
+const imgUrls = [
+    'pic2.jpg',
+    'pic1.jpg',
+    'pic3.jpg',
+    'pic4.jpg', 'car-1.jpg'
+];
+
+class Carousel extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            currentImageIndex: 0
+        };
+
+        this.nextSlide = this.nextSlide.bind(this);
+        this.previousSlide = this.previousSlide.bind(this);
+    }
+    componentDidMount() {
+        setInterval(() => {
+            this.setState(prev => ({
+                currentImageIndex: prev.currentImageIndex === imgUrls.length - 1 ? 0 :
+                    prev.currentImageIndex + 1
+            }))
+        }, 5000)
+    }
+
+    previousSlide() {
+        const lastIndex = imgUrls.length - 1;
+        const { currentImageIndex } = this.state;
+        const shouldResetIndex = currentImageIndex === 0;
+        const index = shouldResetIndex ? lastIndex : currentImageIndex - 1;
+
+        this.setState({
+            currentImageIndex: index
+        });
+    }
+
+    nextSlide() {
+        const lastIndex = imgUrls.length - 1;
+        const { currentImageIndex } = this.state;
+        const shouldResetIndex = currentImageIndex === lastIndex;
+        const index = shouldResetIndex ? 0 : currentImageIndex + 1;
+
+        this.setState({
+            currentImageIndex: index
+        });
+    }
+
     render() {
         return (
-            <div className="outer_container">
-                <div className="inner_container">
-                    <nav className="primary_nav">
-                        <ul>
-                            <li><a href="#">CREDIT UNION</a></li>
-                            <li><a href="#" onClick={this.myfunc}>INSURANCE</a></li>
-                            <li><a href="#" onClick={this.myfunc}>REALTY</a></li>
-                            <li><a href="#" onClick={this.myfunc}>INVESTMENT</a></li>
-                        </ul>
-                    </nav>
-                    <nav className="secondary_nav" >
-                        <ul>
-                            <li><a onClick={this.setRenderer} href="#">Community</a></li>
-                            <span>|</span>
-                            <li><a href="#">Branches & ATMs</a></li>
-                            <li><a href="#">Careers</a></li>
+            <div className="carousel">
 
-                        </ul>
-                    </nav>
-                    <nav className="tertiary_nav">
-                        <ul>
-
-                            <li ><a href="#">LOGIN</a></li>
-
-
-                            <li><a href="#">SEARCH</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <ImageSlide url={imgUrls[this.state.currentImageIndex]} />
+                <Arrow direction="left" clickFunction={this.previousSlide} glyph="&#10094;" />
+                <Arrow direction="right" clickFunction={this.nextSlide} glyph="&#10095;" />
             </div>
-
         );
     }
 }
 
-export default Tester;
 
-{/* <span><i className="far fa-user"></i></span>
-<span><i className="fas fa-search"></i></span>
-<span>|</span> */}
+const Arrow = ({ direction, clickFunction, glyph }) => (
+    <div
+        className={`slide-arrow ${direction}`}
+        onClick={clickFunction}>
+        {glyph}
+    </div>
+);
+
+const ImageSlide = ({ url }) => {
+    const styles = {
+        backgroundImage: `url(${url})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+    };
+
+    return (
+        <div className="image-slide" style={styles}></div>
+    );
+}
+export default Carousel;
+// ReactDOM.render(
+//   <Carousel />,
+//   document.getElementById('container')
+// );

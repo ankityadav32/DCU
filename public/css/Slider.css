@@ -11,7 +11,9 @@
 .slide{
     height: 400px;
     min-width: 100%;
-    transition: .2s;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    transition-delay: 0s;
     overflow: hidden;
 }
 #goLeft{
