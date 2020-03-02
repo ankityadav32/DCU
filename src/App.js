@@ -10,6 +10,7 @@ function App() {
     <div className="App" style={{ height: "2000px" }}>
       <Header />
       <Carousel />
+      <ButtonDropdown />
       {/* <Slider />
       <ButtonDropdown /> */}
 

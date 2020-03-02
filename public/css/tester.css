@@ -1,13 +1,30 @@
  .carousel {
-	height: 50%;
-	display: grid;
+	height: auto;
+	display: flex;
 	width: 100%;
 }
-
-.image-slide {
-	height: 40%;
-	width: 100%;
-	transition: background-image 1200ms linear;
+/* .carousel img{
+    width: 100%;
+    height: auto;
+    opacity: .5;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    transition:opacity 1200ms linear; 
+}*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    transition:opacity 1200ms linear;
+  }
+@keyframes fade{
+    from {opacity: 0.7}
+    to{opacity: 1}
+    
+} 
+.image-slide2 {
+    width: 100%;
+    opacity: 1;
+	transition:opacity 1200ms linear;
 }
 
 .slide-arrow {
@@ -20,13 +37,24 @@
     height:9%; opacity: 50%;
     background-color:white;
     text-align: center; 
-    padding-top: 9px;
+    padding-top: 9px;  
 }
 
 .slide-arrow.right {
-	right: 0;
+	right: 0; 
 }
 
 .slide-arrow.left {
 	left: 0;
+}
+@media only screen and (max-width: 1017px){
+    .slide-arrow{
+        display: none;
+    }
+    .carousel{
+
+    }
+    .image-slide{
+
+    }
 }

@@ -7,6 +7,7 @@ const imgUrls = [
     'pic4.jpg', 'car-1.jpg'
 ];
 
+
 class Carousel extends Component {
     constructor(props) {
         super(props);
@@ -53,7 +54,7 @@ class Carousel extends Component {
         return (
             <div className="carousel">
 
-                <ImageSlide url={imgUrls[this.state.currentImageIndex]} />
+                <ImageSlide2 url={imgUrls[this.state.currentImageIndex]} />
                 <Arrow direction="left" clickFunction={this.previousSlide} glyph="&#10094;" />
                 <Arrow direction="right" clickFunction={this.nextSlide} glyph="&#10095;" />
             </div>
@@ -69,12 +70,23 @@ const Arrow = ({ direction, clickFunction, glyph }) => (
         {glyph}
     </div>
 );
-
+const ImageSlide2 = ({ url }) => {
+    const styles = {
+        width: '100%',
+        height: 'auto',
+        animationName: "fade",
+        animationDuration: "3.5s"
+    };
+    console.log("called now")
+    return (
+        <img className="image-slide2 fade" src={url} style={styles} />
+    );
+}
 const ImageSlide = ({ url }) => {
     const styles = {
         backgroundImage: `url(${url})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
     };
 
     return (
